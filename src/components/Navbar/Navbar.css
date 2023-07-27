@@ -1,0 +1,134 @@
+.rest__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+
+    padding: 1rem 2rem;
+}
+
+.rest__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rest__navbar-logo img {
+    width: 150px;
+}
+
+.rest__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rest__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.rest__navbar-links_container p:hover {
+    color: var(--color-grey);
+}
+
+.rest__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rest__navbar-login p {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.rest__navbar-login p:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.rest__navbar-links_container p,
+.rest__navbar-login p,
+.rest__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-alt);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.rest__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.rest__navbar-menu svg {
+    cursor: pointer;
+}
+
+.rest__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    border: 1px solid white;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+}
+
+.rest__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.rest__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .rest__navbar-links_container {
+        display: none;
+    }
+
+    .rest__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .rest__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rest__navbar {
+        padding: 2rem;
+    }
+
+    .rest__navbar-sign {
+        display: none;
+    }
+
+    .rest__navbar-menu_container {
+        top: 20px;
+    }
+
+    .rest__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
