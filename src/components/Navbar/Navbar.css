@@ -1,3 +1,7 @@
+/* * {
+    border: 1px solid red;
+} */
+
 .rest__navbar {
     width: 100%;
     display: flex;
@@ -52,9 +56,15 @@
     border-bottom: 1px solid var(--color-golden);
 }
 
+.rest__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+
 .rest__navbar-links_container p,
 .rest__navbar-login p,
-.rest__navbar-menu_container p {
+.rest__navbar-sidebar_overlay p {
     color: #fff;
     font-family: var(--font-alt);
     font-weight: 400;
@@ -67,68 +77,77 @@
     cursor: pointer;
 }
 
-.rest__navbar-menu {
-    margin-left: 1rem;
-
+.rest__navbar-sidebar {
     display: none;
-    position: relative;
 }
 
-.rest__navbar-menu svg {
+.rest__navbar-sidebar svg {
     cursor: pointer;
 }
 
-.rest__navbar-menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.rest__navbar-sidebar_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: .5s ease;
+
     flex-direction: column;
-    border: 1px solid white;
+    z-index: 5;
+}
+
+.rest__navbar-sidebar_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+
     position: absolute;
-    right: 0;
-    top: 40px;
-    margin-top: 1rem;
-    min-width: 210px;
+    top: 20px;
+    right: 20px;
 }
 
-.rest__navbar-menu_container p {
-    margin: 1rem 0;
+.rest__navbar-sidebar_links p {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
 }
 
-.rest__navbar-menu_container-links-sign {
-    display: none;
+.rest__navbar-sidebar_links p:hover {
+    color: var(--color-white);
 }
 
-@media screen and (max-width: 1050px) {
-    .rest__navbar-links_container {
+
+@media screen and (min-width: 2000px) {
+    .rest__navbar-logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .rest__navbar-links {
         display: none;
     }
 
-    .rest__navbar-menu {
+    .rest__navbar-sidebar {
         display: flex;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     .rest__navbar {
-        padding: 2rem 4rem;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .rest__navbar {
-        padding: 2rem;
+        padding: 1rem;
     }
 
-    .rest__navbar-sign {
+    .rest__navbar-login {
         display: none;
     }
 
-    .rest__navbar-menu_container {
-        top: 20px;
-    }
-
-    .rest__navbar-menu_container-links-sign {
-        display: block;
+    .rest__navbar-logo img {
+        width: 110px;
     }
 }

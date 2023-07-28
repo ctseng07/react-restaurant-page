@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/gericht.png';
-// import line from '../../asset/line.png';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import images from '../../constants/images';
 import './Navbar.css';
 
 const Menu = () => (
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className='rest__navbar'>
       <div className="rest__navbar-logo">
-        <img src={logo} alt='logo' />
+        <img src={images.gericht} alt='rest__logo' />
       </div>
       <div className="rest__navbar-links">
         <div className="rest__navbar-links_container">
@@ -29,27 +29,22 @@ const Navbar = () => {
       </div>
       <div className="rest__navbar-login">
         <p>Log In / Registration</p>
+        <div />
         <p>Book Table</p>
       </div>
-      <div className="rest__navbar-menu">
-        {toggleMenu
-          ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />
-        }
+      <div className="rest__navbar-sidebar">
+        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="rest__navbar-menu_container scale-up-center">
-            <div className="rest__navbar-menu_container-links">
-              <Menu />
-              <div className="rest__navbar-menu_container-links-login">
-                <p>Log In / Registration</p>
-                <p>Book Table</p>
-              </div>
+          <div className="rest__navbar-sidebar_overlay flex__center slide-bottom">
+            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
+            <div className="rest__navbar-sidebar_links">
+              <Menu onClick={() => setToggleMenu(false)} />
             </div>
           </div>
         )}
       </div>
-    </div >
-  )
+    </div>
+  );
 };
 
 export default Navbar;
