@@ -7,14 +7,14 @@ const Header = () => {
 
   return (
     <div className='rest__header section__padding' id='home'>
-      <div className="rest__header-content_title">
-        <h3 className='rest__header-title'>Chase The New Flavour</h3>
-        <img src={images.spoon} alt='header__logo' />
-      </div>
       <div className="rest__header-content">
-        <h1 className='rest__header-content_headline'>The Key To Fine Dining</h1>
-        <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus</p>
+        <h3 className='rest__header-content_title'>Chase The New Flavour</h3>
+        <img src={images.spoon} alt='header__logo' />
 
+        <h1 className='rest__header-content_headline'>The Key To Fine Dining</h1>
+        <div className="rest__header-content_text">
+          <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus</p>
+        </div>
         <div className="rest__header-content_btn">
           <button type='button'>Explore Menu</button>
         </div>
