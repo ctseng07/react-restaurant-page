@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SubHeading from '../../components/SubHeading/SubHeading';
 import images from "../../constants/images";
 import './Header.css';
 
@@ -8,9 +9,7 @@ const Header = () => {
   return (
     <div className='rest__header section__padding' id='home'>
       <div className="rest__header-content">
-        <h3 className='rest__header-content_title'>Chase The New Flavour</h3>
-        <img src={images.spoon} alt='header__logo' />
-
+        <SubHeading title="Chase the new flavour" />
         <h1 className='rest__header-content_headline'>The Key To Fine Dining</h1>
         <div className="rest__header-content_text">
           <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus</p>
@@ -20,7 +19,7 @@ const Header = () => {
         </div>
       </div>
       <div className="rest__header-image">
-        <img src={images.welcome} alt="welcome" />
+        <img src={images.welcome} alt="header__img" />
       </div>
     </div>
   );
