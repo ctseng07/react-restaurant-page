@@ -9,12 +9,10 @@ const AboutUs = () => (
     <div className="rest__aboutus-overlay flex__center">
       <img src={images.G} alt='g_overlay' />
     </div>
-    <div className="rest__aboutus-content">
-      <div className="rest__aboutus-content_about">
-        <SubHeading title="About Us" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-        <button type='button' className='custom__button'>Know More</button>
-      </div>
+    <div className="rest__aboutus-content_about">
+      <SubHeading title="About Us" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+      <button type='button' className='custom__button'>Know More</button>
     </div>
     <div className="rest__aboutus-image">
       <img src={images.knife} alt="knife img" />
