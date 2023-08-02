@@ -1,0 +1,24 @@
+.rest__specialMenu {
+    background-color: var(--color-black);
+}
+
+.rest__specialMenu-title {
+    font-family: var(--font-base);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+}
+
+.rest__specialMenu-title_special {
+    font-family: var(--font-base);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    color: var(--color-golden);
+}
