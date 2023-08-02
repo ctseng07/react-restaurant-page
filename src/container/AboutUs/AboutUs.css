@@ -18,6 +18,11 @@
     z-index: 0;
 }
 
+.rest__aboutus-content {
+    width: 100%;
+    z-index: 2;
+}
+
 .rest__aboutus-content_about,
 .rest__aboutus-content_history {
     width: 523px;
@@ -48,7 +53,7 @@
     text-align: right;
 }
 
-p.rest__header-title {
+.rest__aboutus-content-title {
     font-family: var(--font-base);
     font-size: 64px;
     font-weight: 600;
@@ -57,15 +62,13 @@ p.rest__header-title {
     color: var(--color-golden);
 }
 
-.rest__aboutus-content_history {}
-
 .rest__aboutus-image img {
     width: 84px;
     height: 703px;
     top: 1277px;
     left: 1002px;
     angle: -90deg;
-    margin: 4rem;
+    margin: 2rem 4rem;
 }
 
 button.custom__button {
