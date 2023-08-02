@@ -26,6 +26,6 @@ const AboutUs = () => (
       </div>
     </div>
   </div>
-);
+)
 
 export default AboutUs;
