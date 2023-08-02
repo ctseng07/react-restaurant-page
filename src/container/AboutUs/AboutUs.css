@@ -74,3 +74,31 @@
 button.custom__button {
     margin-top: 2rem;
 }
+
+@media screen and (min-width: 2000px) {
+    .rest__aboutus-image img {
+        height: 1110px;
+    }
+
+    .rest__aboutus-content_about p,
+    .rest__aboutus-content_history p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .rest__aboutus-content {
+        flex-direction: column;
+    }
+
+    .rest__aboutus-image {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rest__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
