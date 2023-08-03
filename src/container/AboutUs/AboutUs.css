@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 .rest__aboutus {
     position: relative;
@@ -25,8 +25,7 @@
 
 .rest__aboutus-content_about,
 .rest__aboutus-content_history {
-    width: 523px;
-    height: 292px;
+    width: 100%;
 }
 
 .rest__aboutus-content_about p,
