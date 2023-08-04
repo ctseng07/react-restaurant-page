@@ -35,21 +35,21 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.04em;
-    text-align: left;
     color: var(--color-grey);
     margin-top: 1rem;
 }
 
+.rest__aboutus-content_about,
 .rest__aboutus-content_about p {
     text-align: right;
 }
 
-.rest__aboutus-content_about img {
-    rotate: 180deg;
+.rest__aboutus-content_history p {
+    text-align: left;
 }
 
-.rest__aboutus-content_about {
-    text-align: right;
+.rest__aboutus-content_about img {
+    rotate: 180deg;
 }
 
 .rest__aboutus-content-title {
