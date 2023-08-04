@@ -1,0 +1,107 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.rest__chef {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.rest__chef-image {
+    width: 667px;
+    height: 736px;
+}
+
+.rest__chef-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.rest__chef-content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.rest__chef-content_title {
+    font-family: var(--font-base);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--color-golden);
+
+    margin-bottom: 3rem;
+}
+
+.rest__chef-content_text img {
+    width: 47px;
+    height: 40px;
+}
+
+.rest__chef-content_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.rest__chef-content_text-two,
+.rest__chef-content_text p {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    color: var(--color-white);
+}
+
+.rest__chef-content_text-two {
+    margin-bottom: 4rem;
+}
+
+.rest__chef-sign {
+    text-align: left;
+}
+
+.rest__chef-sign h1 {
+    font-family: var(--font-base);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--color-golden);
+}
+
+.rest__chef-sign p {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--color-grey);
+}
+
+.rest__chef-sign {
+    width: 235px;
+    height: 83px;
+
+}
+
+.rest__chef-sign img {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 2rem;
+}
