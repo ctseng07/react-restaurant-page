@@ -19,19 +19,6 @@
     justify-content: center;
 }
 
-.rest__header-content_title {
-    width: 100%;
-}
-
-.rest__header-title {
-    font-family: var(--font-base);
-    color: var(--color-white);
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-}
-
 .rest__header-content_headline {
     font-family: var(--font-base);
     color: var(--color-golden);
