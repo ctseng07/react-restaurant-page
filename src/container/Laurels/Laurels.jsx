@@ -13,26 +13,16 @@ const AwardInfo = ({ award: { imgUrl, title, subtitle } }) => (
       <p className='rest__awardInfo-content_text'>{subtitle}</p>
     </div>
   </div>
-)
-
-// const Logo = () => (
-//   <div className="rest__laurels-logo">
-//     <img src={images.logo} alt="logo_img" />
-//   </div>
-// )
+);
 
 const Laurels = () => (
-  <div className='rest__laurels rest__bg section__padding' id='awards'>
-    {/* <div className="rest__laurels-logo">
-      <img src={images.logo} alt="logo_img" />
-    </div> */}
-
+  <div className='rest__bg rest__laurels section__padding' id='awards'>
     <div className="rest__laurels-content">
       <SubHeading title="Awards & Recognition" />
       <h1 className='rest__laurels-content_title'>Our Laurels</h1>
 
       <div className="rest__laurels-awards">
-        {data.awards.map((award) => <AwardInfo award={award} title={award.title} subtitle={award.subtitle} />)}
+        {data.awards.map((award) => <AwardInfo award={award} key={award.title} />)}
       </div>
     </div>
 

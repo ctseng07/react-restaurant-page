@@ -1,5 +1,26 @@
-* {
+/* * {
     border: 1px solid red;
+} */
+
+.rest__awardInfo-content_title {
+    font-family: var(--font-base);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--color-golden);
+}
+
+
+.rest__awardInfo-content_text {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--color-grey);
 }
 
 .rest__laurels {
@@ -19,7 +40,7 @@
     flex-direction: column;
 }
 
-.rest__laurels-content h1 {
+.rest__laurels-content_title {
     font-family: var(--font-base);
     font-size: 64px;
     font-weight: 600;
@@ -27,6 +48,16 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--color-golden);
+}
+
+.rest__laurels-image {
+    width: 483px;
+    height: 691px;
+}
+
+.rest__laurels-image img {
+    width: 100%;
+    height: 100%;
 }
 
 .rest__laurels-awards {
@@ -38,43 +69,47 @@
     margin-top: 3rem;
 }
 
-.rest__laurels-image {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 2rem;
-}
-
 .rest__awardInfo {
     flex: 1;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     min-width: 230px;
 
     margin: 1rem;
 }
 
-
-.rest__awardInfo-content_text {
-    font-family: var(--font-alt);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: var(--color-grey);
+.rest__awardInfo img {
+    width: 50px;
+    height: 50px;
 }
 
-/* .rest__laurels-image {
-    width: 483px;
-    height: 691px;
+.rest__awardInfo-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
 }
 
-.rest__laurels-image img {
-    width: 100%;
-    height: 100%;
-} */
+@media screen and (min-width: 1900px) {
+    .rest__awardInfo {
+        min-width: 390px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .rest__laurels {
+        flex-direction: column;
+    }
+
+    .rest__laurels-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rest__awardInfo {
+        min-width: 100%;
+        margin: 1rem 0;
+    }
+}
