@@ -61,9 +61,8 @@
 }
 
 @media screen and (min-width: 1900px) {
-    .rest__findUs-content_title {
-        font-size: 180px;
-        line-height: 210px;
+    .rest__findUs-content {
+        min-width: 390px;
     }
 }
 
