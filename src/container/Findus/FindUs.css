@@ -1,0 +1,102 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.rest__findUs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.rest__findUs-content_title {
+    font-family: var(--font-base);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--color-golden);
+
+    margin-bottom: 4rem;
+}
+
+.rest__findUs-content_text-title {
+    font-family: var(--font-alt);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--color-golden);
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.rest__findUs-content_text {
+    font-family: var(--font-base);
+    color: var(--color-grey);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 16px;
+}
+
+.rest__findUs-content button {
+    margin-top: 4rem;
+}
+
+.rest__findUs-image {
+    width: 667px;
+    height: 736px;
+}
+
+.rest__findUs-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1900px) {
+    .rest__findUs-content_title {
+        font-size: 180px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .rest__findUs-image {
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rest__findUs {
+        flex-direction: column;
+    }
+
+    .rest__findUs-content {
+        width: 100%;
+    }
+
+    .rest__findUs-content_title {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rest__findUs-content_title {
+        font-size: 70px;
+        line-height: 87px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .rest__findUs-content_title {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
