@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 .rest__newsLetter {
     background-color: var(--color-black);
@@ -11,7 +11,7 @@
     top: 7532px;
     left: 307px;
     padding: 64px 252px 64px 252px;
-    border: 1px solid var(--color-black);
+    border: 2px solid rgb(34, 33, 33);
     gap: 64px;
 
 }
@@ -58,5 +58,3 @@
     font-family: var(--font-alt);
     color: var(--color-white);
 }
-
-.rest__newsLetter-content_input button {}
