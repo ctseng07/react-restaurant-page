@@ -11,7 +11,7 @@ const Newsletter = () => (
       <p className='rest__newsletter-content_text'>And never miss latest Updates!</p>
     </div>
 
-    <div className="rest__newsLetter-content_input flex__center">
+    <div className="rest__newsLetter-content_input">
       <input type="email" placeholder='Email Address' />
       <button type='button' className='custom__button'>Subscribe</button>
     </div>
