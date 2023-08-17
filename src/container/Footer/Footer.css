@@ -2,18 +2,36 @@
     border: 1px solid red;
 } */
 
-.rest__footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 8rem;
-    padding-right: 5rem;
-    width: 1, 870px;
-    height: 360px;
-    top: 8102px;
-    left: 22px;
-    gap: 90px;
+.rest__footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--color-black);
+    padding-top: 0;
+}
+
+.rest__footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.rest__footer-contact,
+.rest__footer-logo,
+.rest__footer-hours {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
 }
 
 .rest__footer-title {
@@ -24,7 +42,6 @@
     line-height: 42px;
     letter-spacing: 0.04em;
     text-align: center;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -39,25 +56,10 @@
     margin-top: 1rem;
 }
 
-.rest__footer-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 438px;
-    height: 236px;
-    left: 715.5px;
-    gap: 20px;
-}
-
 .rest__footer-logo img:first-child {
     width: 210px;
     margin-bottom: 0.75rem;
-    background-color: var(--color-golden);
 }
-
-
 
 .rest__footer-logo_text {
     color: var(--color-grey);
@@ -69,18 +71,8 @@
     margin-bottom: 0.5rem;
 }
 
-.rest__footer-logo_content {
-    text-align: center;
-}
-
-.rest__footer-logo_text-end {
-    color: var(--color-gray);
-    font-family: var(--font-alt);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.04em;
-    text-align: center;
+.rest__footer-logo_icons {
+    margin-top: 0.5rem;
 }
 
 .rest__footer-logo_icons svg {
@@ -92,4 +84,51 @@
 
 .rest__footer-logo_icons svg:hover {
     color: var(--color-golden);
+}
+
+.rest__footer-copyright {
+    margin-top: 3rem;
+}
+
+.rest__footer-copyright p {
+    color: var(--color-gray);
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 2000px) {
+    .rest__footer-title {
+        font-size: 51px;
+        line-height: 61.6px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .rest__footer-content {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .rest__footer-contact,
+    .rest__footer-logo,
+    .rest__footer-hours {
+        margin: 2rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rest__footer {
+        padding: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .rest__footer-logo img:first-child {
+        width: 80%;
+    }
 }

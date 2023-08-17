@@ -6,7 +6,7 @@ import images from '../../constants/images';
 import './Footer.css';
 
 const Footer = () => (
-  <div className='rest__footer rest__bg section__padding' id='login'>
+  <div className='rest__footer section__padding' id='login'>
     <FooterOverlay />
     <Newsletter />
 
@@ -28,9 +28,6 @@ const Footer = () => (
             <FiInstagram />
           </div>
         </div>
-        <div className="rest__footer-logo_text-end">
-          <p>2021 Gerícht. All Rights reserved.</p>
-        </div>
       </div>
 
       <div className="rest__footer-hours">
@@ -38,6 +35,9 @@ const Footer = () => (
         <p className="rest__footer-text">Monday-Friday: <br /> 08:00 am -12:00 am</p>
         <p className="rest__footer-text">Saturday-Sunday: <br /> 07:00am -11:00 pm</p>
       </div>
+    </div>
+    <div className="rest__footer-copyright">
+      <p>2021 Gerícht. All Rights reserved.</p>
     </div>
   </div>
 );
